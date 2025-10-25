@@ -63,7 +63,7 @@ sudo ./etc/DependencyInstaller.sh -all
 ```
 
 <p align="center">
-   <img src="Images/week5_1.png" alt="OpenROAD repository cloning in progress" width="90%">
+   <img src="Images/a.png" alt="OpenROAD repository cloning in progress" width="90%">
 </p>
 
 *Cloning the OpenROAD repository with recursive submodule initialization - downloading complete toolchain source code.*
@@ -81,7 +81,7 @@ sudo make install
 ```
 
 <p align="center">
-   <img src="Images/week5_2.png" alt="Dependency installation with DependencyInstaller script" width="90%">
+   <img src="Images/b.png" alt="Dependency installation with DependencyInstaller script" width="90%">
 </p>
 
 *Installing system-level dependencies including CMake, Boost, Eigen, TCL, and other required libraries for OpenROAD compilation.*
@@ -89,7 +89,7 @@ sudo make install
 ---
 
 <p align="center">
-   <img src="Images/week5_3.png" alt="Installation summary showing all installed packages" width="90%">
+   <img src="Images/c.png" alt="Installation summary showing all installed packages" width="90%">
 </p>
 
 *Installation summary displaying successfully installed packages - CMake 3.31.9, PCRE 10.42, SWIG 4.3.0, Boost 1.86, and other critical build dependencies.*
@@ -104,7 +104,7 @@ openroad -version
 ```
 
 <p align="center">
-   <img src="Images/week5_4.png" alt="OpenROAD version verification showing v2.0" width="90%">
+   <img src="Images/d.png" alt="OpenROAD version verification showing v2.0" width="90%">
 </p>
 
 *OpenROAD v2.0-25765-g83ff256997 successfully installed - version check confirms functional installation with GUI, GPU, and Python support enabled.*
@@ -181,7 +181,7 @@ openroad -gui -log gcd_logfile.log gcd_nangate45_copy.tcl
 ```
 
 <p align="center">
-   <img src="Images/week5_5.png" alt="Initial floorplan view showing die and core boundaries" width="90%">
+   <img src="Images/e.png" alt="Initial floorplan view showing die and core boundaries" width="90%">
 </p>
 
 *Initial floorplan visualization in OpenROAD GUI - die boundary (100.13 × 100.8 μm) and core area (80.18 × 79.8 μm) clearly defined with I/O pins placed on the periphery.*
@@ -189,7 +189,7 @@ openroad -gui -log gcd_logfile.log gcd_nangate45_copy.tcl
 ---
 
 <p align="center">
-   <img src="Images/week5_6.png" alt="Floorplan with placement rows and tracks enabled" width="90%">
+   <img src="Images/f.png" alt="Floorplan with placement rows and tracks enabled" width="90%">
 </p>
 
 *Floorplan with placement rows (purple horizontal lines) and routing tracks (vertical/horizontal grid) enabled - shows the structured layout canvas where standard cells will be placed.*
@@ -235,7 +235,7 @@ pdngen
 ```
 
 <p align="center">
-   <img src="Images/week5_7.png" alt="Power distribution network showing VDD and VSS grids" width="90%">
+   <img src="Images/g.png" alt="Power distribution network showing VDD and VSS grids" width="90%">
 </p>
 
 *Complete Power Distribution Network visualization - both VDD (green) and VSS (red) grids overlaid, showing the comprehensive power delivery infrastructure across the entire core area.*
@@ -243,7 +243,7 @@ pdngen
 ---
 
 <p align="center">
-   <img src="Images/week5_8.png" alt="Detailed placement result with non-overlapping cells" width="90%">
+   <img src="Images/h.png" alt="Detailed placement result with non-overlapping cells" width="90%">
 </p>
 
 *Detailed placement completion - all standard cells legally placed in rows with no overlaps, color-coded by cell type (logic gates, flip-flops, buffers) showing optimized utilization and routability.*
