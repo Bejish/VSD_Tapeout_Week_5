@@ -53,6 +53,9 @@ Master the physical design flow using OpenROAD - from initial floorplan definiti
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD.git
 cd OpenROAD
 ```
+<p align="center">
+   <img src="Images/a.png" alt="OpenROAD repository cloning in progress" width="90%">
+</p>
 
 **Step 2: Install Dependencies**
 
@@ -61,12 +64,20 @@ OpenROAD requires numerous system dependencies for compilation:
 ```bash
 sudo ./etc/DependencyInstaller.sh -all
 ```
-
 <p align="center">
-   <img src="Images/a.png" alt="OpenROAD repository cloning in progress" width="90%">
+   <img src="Images/b.png" alt="Dependency installation with DependencyInstaller script" width="90%">
 </p>
 
 *Cloning the OpenROAD repository with recursive submodule initialization - downloading complete toolchain source code.*
+*Installing system-level dependencies including CMake, Boost, Eigen, TCL, and other required libraries for OpenROAD compilation.*
+
+---
+
+<p align="center">
+   <img src="Images/c.png" alt="Installation summary showing all installed packages" width="90%">
+</p>
+
+*Installation summary displaying successfully installed packages - CMake 3.31.9, PCRE 10.42, SWIG 4.3.0, Boost 1.86, and other critical build dependencies.*
 
 ---
 
@@ -79,21 +90,6 @@ cmake ..
 make -j$(nproc)
 sudo make install
 ```
-
-<p align="center">
-   <img src="Images/b.png" alt="Dependency installation with DependencyInstaller script" width="90%">
-</p>
-
-*Installing system-level dependencies including CMake, Boost, Eigen, TCL, and other required libraries for OpenROAD compilation.*
-
----
-
-<p align="center">
-   <img src="Images/c.png" alt="Installation summary showing all installed packages" width="90%">
-</p>
-
-*Installation summary displaying successfully installed packages - CMake 3.31.9, PCRE 10.42, SWIG 4.3.0, Boost 1.86, and other critical build dependencies.*
-
 ---
 
 **Step 4: Verify Installation**
